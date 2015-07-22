@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site" method="upgrade">
+	<name>CLM Archiv Modul</name>
+	<author>CLM Projekt</author>
+	<creationDate>24.01.2015</creationDate>
+	<copyright>(C) Copyright 2008 - 2015 by CLM Project</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>fishpoke@fishpoke.de</authorEmail>
+	<authorUrl>www.chessleaguemanager.de</authorUrl>
+	<version>1.2.2</version>
+	<description>
+		<![CDATA[
+			 <h3>Chess League Manager : Archiv Modul</h3>
+			 <p>Modul zur Darstellung der archivierten Ligen für den öffentlichen Bereich.</p>
+			 <p><a target="_blank" href="http://www.chessleaguemanager.de">CLM Projekt Homepage</a></p>
+			 <p>&copy; Thomas Schwietert [<a target="_blank" href="http://www.sboo.de">www.sboo.de</a>] &amp; Andreas Dorn [<a target="_blank" href="http://www.sbbl.org">www.sbbl.org</a>]</p>
+			 ]]>
+		 </description>
+
+	<files>
+		<filename module="mod_clm_archiv">mod_clm_archiv.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>changelog.txt</filename>
+		<folder>tmpl/</folder>
+	</files>
+		<config><fields name="params">
+	<fieldset name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                    name="cache"
+                    type="list"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                        value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option
+                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                    name="cache_time"
+                    type="text"
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+                <field
+                    name="cachemode"
+                    type="hidden"
+                    default="itemid">
+                    <option
+                        value="itemid"></option>
+                </field>
+
+   </fieldset>	
+	</fields></config>
+</extension>
