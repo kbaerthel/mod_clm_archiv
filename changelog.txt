@@ -11,6 +11,9 @@ $ -> Language fix or change
 - -> Removed
 ! -> Note
 
+- - - - - 3.2.2 - [18-04-2015] - - - - - - - - - - - - - - - - - - - -
+! Vermeidung gleicher Versionsnummern in verschiedenen CLM Versionen
+
 - - - - - 1.2.2 - [24-01-2015] - - - - - - - - - - - - - - - - - - - -
 ^ Konfigurationsmöglichkeiten in "Erweitert" vergrößert
 
