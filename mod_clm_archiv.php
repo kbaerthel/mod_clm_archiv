@@ -9,6 +9,7 @@ require_once (dirname(__FILE__).DS.'helper.php');
 $link = modCLM_ArchivHelper::getLink($params);
 $count = modCLM_ArchivHelper::getCount($params);
 $saison = modCLM_ArchivHelper::getSaison($params);
+$runden = modCLM_ArchivHelper::getRunde($params);
 
 require(JModuleHelper::getLayoutPath('mod_clm_archiv'));
 

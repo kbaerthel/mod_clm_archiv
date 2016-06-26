@@ -2,12 +2,12 @@
 <extension type="module" version="1.7.0" client="site" method="upgrade">
 	<name>CLM Archiv Modul</name>
 	<author>CLM Projekt</author>
-	<creationDate>06.08.2015</creationDate>
-	<copyright>(C) Copyright 2008 - 2015 by CLM Project</copyright>
+	<creationDate>26.06.2016</creationDate>
+	<copyright>(C) Copyright 2008 - 2016 by CLM Project</copyright>
 	<license>GNU/GPL</license>
 	<authorEmail>fishpoke@fishpoke.de</authorEmail>
 	<authorUrl>www.chessleaguemanager.de</authorUrl>
-	<version>3.2.3</version>
+	<version>3.3.0</version>
 	<description>MOD_CLM_ARCHIV_XML_DESCRIPTION</description>
 
 	<files>
@@ -23,8 +23,8 @@
 		<fields name="params">
 			<fieldset name="basic" label="JACTION_ADMIN">
 				<field name="mt_type" type="list" default="0" label="MOD_CLM_ARCHIV_PARAM_TYPE_LABEL" description="MOD_CLM_ARCHIV_PARAM_TYPE_DESC">
-					<option value="0">Ligen/Mannschaftsturniere</option>
-					<option value="1">Einzelturniere</option>
+					<option value="0">MOD_CLM_ARCHIV_PARAM_TYPE_0</option>
+					<option value="1">MOD_CLM_ARCHIV_PARAM_TYPE_1</option>
 				</field>
 			</fieldset>
 			<fieldset name="advanced">
