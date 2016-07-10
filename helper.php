@@ -39,7 +39,7 @@ class modCLM_ArchivHelper
 				;
 			$db->setQuery( $query );
 			$sid = $db->loadResult();
-			echo "<br>tsid: $turnier :"; var_dump($sid);
+			//echo "<br>tsid: $turnier :"; var_dump($sid);
 			JRequest::setVar('saison', $sid);
 		}
 		if (($atyp == 1 OR $turnier > 0) AND $liga == 0 AND $sid > 0) {
