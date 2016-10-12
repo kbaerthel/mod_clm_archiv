@@ -7,7 +7,12 @@ $turnier	= JRequest::getInt( 'turnier', 0);
 $runde	= JRequest::getInt( 'runde');
 $view	= JRequest::getVar( 'view' );
 $dg	= JRequest::getInt( 'dg' );
-$itemid	= JRequest::getInt( 'Itemid' );
+// itemid
+if($par_itemid == '' || !is_numeric($par_itemid)) {
+	$itemid	= JRequest::getVar( 'Itemid' );
+} else {
+	$itemid = $par_itemid;
+}
 $par_mt_type = $params->def('mt_type', 0);
 $typeid	= JRequest::getVar( 'typeid' );
 if (!isset($typeid)) $typeid = 21; 

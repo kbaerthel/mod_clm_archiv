@@ -2,12 +2,12 @@
 <extension type="module" version="1.7.0" client="site" method="upgrade">
 	<name>CLM Archiv Modul</name>
 	<author>CLM Projekt</author>
-	<creationDate>03.07.2016</creationDate>
+	<creationDate>13.09.2016</creationDate>
 	<copyright>(C) Copyright 2008 - 2016 by CLM Project</copyright>
 	<license>GNU/GPL</license>
 	<authorEmail>fishpoke@fishpoke.de</authorEmail>
 	<authorUrl>www.chessleaguemanager.de</authorUrl>
-	<version>3.3.0</version>
+	<version>3.3.1</version>
 	<description>MOD_CLM_ARCHIV_XML_DESCRIPTION</description>
 
 	<files>
@@ -66,6 +66,7 @@
                     <option
                         value="itemid"></option>
                 </field>
+		<field name="itemid" type="text" default="" label="ITEMID" description="ITEMID_DESC"/>
 
 			</fieldset>	
 		</fields>

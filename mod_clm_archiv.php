@@ -9,6 +9,8 @@ require_once (JPATH_SITE . DIRECTORY_SEPARATOR . "components" . DIRECTORY_SEPARA
 
 require_once (dirname(__FILE__).DS.'helper.php');
 
+$par_itemid = $params->def('itemid', '');
+
 $link = modCLM_ArchivHelper::getLink($params);
 $count = modCLM_ArchivHelper::getCount($params);
 $saison = modCLM_ArchivHelper::getSaison($params);
